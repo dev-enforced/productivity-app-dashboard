@@ -1,0 +1,18 @@
+.App {
+  min-height: 100vh;
+}
+
+.widget_container{
+  justify-content: center;
+  min-height: 70vh;
+}
+
+.empty_widget_section{
+  align-items: center;
+  justify-content: center;
+  gap:1rem;
+}
+
+.empty_widget_section img{
+  height: 15rem;
+}

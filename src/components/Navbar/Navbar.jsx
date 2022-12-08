@@ -38,6 +38,7 @@ const Navbar = () => {
               navbarOptionsToBeViewed.map((everyNavbarOption) => {
                 return (
                   <span
+                    key={everyNavbarOption.id}
                     onClick={() => {
                       updateNavbarOptions(everyNavbarOption);
                     }}
