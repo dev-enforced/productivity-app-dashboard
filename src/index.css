@@ -1,0 +1,66 @@
+@font-face {
+  font-family: "Gobold Regular";
+  src: local("Gobold_Regular"),
+    url(./assets/fonts/Gobold_Regular/Gobold_Regular.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Product Sans";
+  src: local("Product_Sans"),
+    url(./assets/fonts/Product_Sans/Product_Sans.ttf) format("truetype");
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Product Sans;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Utility classes */
+
+.container-flex {
+  display: flex;
+}
+
+.container-flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.img-responsive {
+  width: 100%;
+}
+
+.container-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-flex-align-center {
+  display: flex;
+  align-items: center;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.list-none {
+  list-style: none;
+}
