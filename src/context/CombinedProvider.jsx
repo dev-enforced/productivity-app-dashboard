@@ -1,9 +1,11 @@
 import React from "react";
-import { WidgetProvider, TimerProvider } from "context";
+import { WidgetProvider, TimerProvider, NotesTasksProvider } from "context";
 const CombinedProvider = ({ children }) => {
   return (
     <WidgetProvider>
-      <TimerProvider>{children}</TimerProvider>
+      <TimerProvider>
+        <NotesTasksProvider>{children}</NotesTasksProvider>
+      </TimerProvider>
     </WidgetProvider>
   );
 };
