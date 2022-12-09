@@ -42,7 +42,13 @@ const TimerProvider = ({ children }) => {
   }, [timePassed]);
 
   return (
-    <TimerContext.Provider value={{ timePassed, startTimer, stopTimer }}>
+    <TimerContext.Provider
+      value={{
+        timePassed,
+        startTimer,
+        stopTimer,
+      }}
+    >
       {children}
     </TimerContext.Provider>
   );
