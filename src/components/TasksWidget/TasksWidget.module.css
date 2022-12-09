@@ -1,0 +1,33 @@
+.tasks_list_wrapper {
+  gap: 1rem;
+  background-color: #ffffff;
+  padding: 1rem;
+}
+
+.title_container {
+  justify-content: space-between;
+  padding: 0.5rem;
+  border-bottom: 1px solid #8c8c8c;
+}
+
+.remove_button {
+  background: transparent;
+  padding: 0.4rem;
+  border: transparent;
+}
+
+.individual_task_container {
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.task_details{
+    gap: 1rem;
+}
+
+.status_details{
+    padding: 0.5rem;
+    border:1px solid black;
+    border-radius:10px;
+}

@@ -38,13 +38,19 @@
 .widget_options_container {
   position: absolute;
   background-color: #f7f7f7;
-  width:7.5rem;
+  width: 7.5rem;
   top: 3.5rem;
-  padding:0.5rem;
+  padding: 0.5rem;
 }
 
-.every_widget_option{
+.every_widget_option {
   cursor: pointer;
-  color:#9254de;
-  padding:0.5rem;
+  color: #9254de;
+  padding: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar_wrapper {
+    width: 40rem;
+  }
 }

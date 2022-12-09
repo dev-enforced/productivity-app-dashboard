@@ -65,3 +65,19 @@ a {
 .list-none {
   list-style: none;
 }
+
+.strikeThrough{
+  text-decoration: line-through;
+}
+
+.redBg{
+  background-color:#FF4D4F;
+}
+
+.orangeBg{
+  background-color: #FFA940;
+}
+
+.greenBg{
+  background-color:#73D13D;
+}
