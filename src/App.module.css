@@ -4,7 +4,7 @@
 
 .widget_container{
   justify-content: center;
-  min-height: 70vh;
+  min-height: 90vh;
 }
 
 .empty_widget_section{
@@ -21,4 +21,8 @@
   display: grid;
   grid-template-columns:1fr 1fr;
   width:70%;
+}
+
+.left_container{
+  gap: 1rem;
 }

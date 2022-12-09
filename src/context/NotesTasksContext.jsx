@@ -1,5 +1,6 @@
 import { existingNotes, tasksData, initialNoteData } from "constants";
 import React, { createContext, useContext, useState } from "react";
+import { v4 as uuid } from "uuid";
 const NotesTasksContext = createContext();
 const NotesTasksProvider = ({ children }) => {
   const [tasksList, updateTasksList] = useState(tasksData);
@@ -20,11 +21,19 @@ const NotesTasksProvider = ({ children }) => {
 
   const removeExistingNote = (noteClicked) => {
     const modifiedNotesList = notesList.filter(
-      (everyNote) => everyNote.id === noteClicked.id
+      (everyNote) => everyNote.id !== noteClicked.id
     );
     updateNotesList(modifiedNotesList);
   };
-  const addNewNote = () => {};
+  const addNewNote = () => {
+    if (currentNoteData.textContent.trim() !== "") {
+      const modifiedNotesList = [
+        ...notesList,
+        { ...currentNoteData, id: uuid() },
+      ];
+      updateNotesList(modifiedNotesList);
+    }
+  };
 
   return (
     <NotesTasksContext.Provider
@@ -36,6 +45,7 @@ const NotesTasksProvider = ({ children }) => {
         currentNoteData,
         updateCurrentNoteData,
         addNewNote,
+        initialNoteData,
       }}
     >
       {children}

@@ -45,3 +45,13 @@
 .time_details{
   color: #BFBFBF;
 }
+
+@media screen and (max-width:768px){
+  .work_time_wrapper{
+    height: fit-content;
+  }
+  .timer_container{
+    flex-direction: column;
+    
+  }
+}

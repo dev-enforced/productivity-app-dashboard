@@ -15,7 +15,6 @@ const App = () => {
   const tasksWidget = widgetOptionsToBeViewed.find(
     (everyNavbarOption) => everyNavbarOption.optionName === "Tasks"
   );
-  console.log(workTimerWidget);
   return (
     <div className="App">
       <Navbar />
@@ -29,7 +28,7 @@ const App = () => {
           </div>
         ) : (
           <div className={`${styles.filled_widget_container}`}>
-            <div className={`${styles.left_container}`}>
+            <div className={`container-flex-column ${styles.left_container}`}>
               {workTimerWidget?.enabled ? <WorkTimerWidget widgetDetails={workTimerWidget}/> : null}
               {notesWidget?.enabled ? <NotesWidget widgetDetails={notesWidget}/> : null}
             </div>
