@@ -1,2 +1,3 @@
 import { BiPlus as Plus } from "react-icons/bi";
-export { Plus };
+import { GrClose as Close } from "react-icons/gr";
+export { Plus, Close };

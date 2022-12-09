@@ -16,3 +16,9 @@
 .empty_widget_section img{
   height: 15rem;
 }
+
+.filled_widget_container{
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  width:70%;
+}

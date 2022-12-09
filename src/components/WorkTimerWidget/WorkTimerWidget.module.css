@@ -1,0 +1,47 @@
+.work_time_wrapper {
+  height: 12rem;
+  background-color: #ffffff;
+  gap: 1rem;
+}
+
+.title_container,
+.timer_container {
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.remove_button {
+  background: transparent;
+  padding: 0.4rem;
+  border: transparent;
+}
+
+.timer_container {
+  gap: 1rem;
+}
+
+.btn_wrapper {
+  gap: 1rem;
+  justify-content: space-around;
+}
+
+.btn {
+  width: 5rem;
+  height: 2.5rem;
+  background: transparent;
+  border: transparent;
+}
+
+.pause_btn {
+  border: 1px solid #ffc53d;
+  color: #faad14;
+}
+
+.stop_btn {
+  border: 1px solid #ff4d4f;
+  color: #f5222d;
+}
+
+.time_details{
+  color: #BFBFBF;
+}

@@ -1,4 +1,4 @@
-import { Navbar } from "components";
+import { Navbar, NotesWidget, TasksWidget, WorkTimerWidget } from "components";
 import { useWidget } from "context";
 import styles from "./App.module.css";
 const App = () => {
@@ -15,6 +15,7 @@ const App = () => {
   const tasksWidget = widgetOptionsToBeViewed.find(
     (everyNavbarOption) => everyNavbarOption.optionName === "Tasks"
   );
+  console.log(workTimerWidget);
   return (
     <div className="App">
       <Navbar />
@@ -28,15 +29,11 @@ const App = () => {
           </div>
         ) : (
           <div className={`${styles.filled_widget_container}`}>
-            {/* Left division */}
-            <div className={``}>
-              {/* Work Timer */}
-              <div></div>
-              {/* Notes */}
-              <div></div>
+            <div className={`${styles.left_container}`}>
+              {workTimerWidget?.enabled ? <WorkTimerWidget widgetDetails={workTimerWidget}/> : null}
+              {notesWidget?.enabled ? <NotesWidget widgetDetails={notesWidget}/> : null}
             </div>
-            {/* Right Division  Tasks Container*/}
-            <div></div>
+            {tasksWidget?.enabled ? <TasksWidget widgetDetails={tasksWidget}/> : null}
           </div>
         )}
       </div>

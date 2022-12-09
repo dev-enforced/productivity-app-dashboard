@@ -1,8 +1,10 @@
 import React from "react";
-import {WidgetProvider} from "context";
-const CombinedProvider=({children})=>{
-    return (
-        <WidgetProvider>{children}</WidgetProvider>
-    )
-}
-export {CombinedProvider};
+import { WidgetProvider, TimerProvider } from "context";
+const CombinedProvider = ({ children }) => {
+  return (
+    <WidgetProvider>
+      <TimerProvider>{children}</TimerProvider>
+    </WidgetProvider>
+  );
+};
+export { CombinedProvider };
